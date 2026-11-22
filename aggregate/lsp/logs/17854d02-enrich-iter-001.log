@@ -1,0 +1,56 @@
+[2026-11-22T13:16:46Z] === ENRICH ITERATION 1 START | repo=timothee-haudebourg/json-ld sha=17854d02 ===
+[2026-11-22T13:16:46Z] [iter=1] PHASE START: enrich repo=timothee-haudebourg/json-ld sha=17854d02 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/17854d02-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/17854d02835dcac70f6e9b40f028e1b61e6ae8fd.nq.gz
+[2026-11-22T13:16:57Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=78 MB
+[2026-11-22T13:17:06Z] [iter=1] AST store loaded triples=1267408 load_secs=9 mem_mb=894 MB
+[2026-11-22T13:17:06Z] [iter=1] Step 2: Finding LSP targets mem_mb=894 MB
+[2026-11-22T13:17:10Z] [iter=1] LSP targets found call_sites=8619 imports=354 extends=0 implements=1212 secs=4
+[2026-11-22T13:17:14Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=894 MB
+[2026-11-22T13:17:22Z] [iter=1] Position index built positions=84707 nodes_with_types=104620 secs=8 mem_mb=894 MB
+[2026-11-22T13:17:22Z] [iter=1] Step 3: Starting LSP resolution mem_mb=894 MB already_completed_types=[] already_completed_files=0
+[2026-11-22T13:17:22Z] [iter=1] Resolving target type target_type=call_site count=8619
+[2026-11-22T13:18:07Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=1.4 files_done=0 resolved=0 errors=0 current=crates/compaction/src/iri.rs
+[2026-11-22T13:19:33Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=2.8 files_done=1 resolved=168 errors=0 current=crates/compaction/src/lib.rs
+[2026-11-22T13:20:06Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=3.3 files_done=3 resolved=304 errors=0 current=crates/core/src/rdf/mod.rs
+[2026-11-22T13:21:47Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=5.0 files_done=5 resolved=834 errors=0 current=crates/core/src/flattening/mod.rs
+[2026-11-22T13:22:21Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=5.6 files_done=8 resolved=1056 errors=0 current=crates/expansion/src/node.rs
+[2026-11-22T13:23:30Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=6.7 files_done=9 resolved=1310 errors=0 current=crates/serialization/src/expanded/default_graph.rs
+[2026-11-22T13:24:26Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=7.7 files_done=12 resolved=1624 errors=0 current=crates/expansion/src/element.rs
+[2026-11-22T13:25:22Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=8.6 files_done=14 resolved=1910 errors=0 current=crates/expansion/src/literal.rs
+[2026-11-22T13:27:24Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=10.6 files_done=16 resolved=2256 errors=0 current=crates/testing/src/ty/parse.rs
+[2026-11-22T13:28:19Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=11.6 files_done=18 resolved=2451 errors=0 current=crates/testing/src/lib.rs
+[2026-11-22T13:28:57Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=12.2 files_done=21 resolved=2707 errors=0 current=crates/compaction/src/value.rs
+[2026-11-22T13:30:00Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=13.2 files_done=23 resolved=3021 errors=0 current=crates/core/src/id.rs
+[2026-11-22T13:30:33Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=13.8 files_done=27 resolved=3253 errors=0 current=crates/cli/src/main.rs
+[2026-11-22T13:31:31Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=14.7 files_done=29 resolved=3495 errors=0 current=crates/core/src/object/value.rs
+[2026-11-22T13:32:02Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=15.3 files_done=30 resolved=3661 errors=0 current=crates/syntax/src/into_json.rs
+[2026-11-22T13:32:39Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=15.9 files_done=32 resolved=3874 errors=0 current=src/processor/mod.rs
+[2026-11-22T13:33:12Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=16.4 files_done=34 resolved=3965 errors=0 current=crates/core/src/serialization.rs
+[2026-11-22T13:33:59Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=17.2 files_done=35 resolved=4193 errors=0 current=crates/syntax/src/nullable.rs
+[2026-11-22T13:34:44Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=18.0 files_done=38 resolved=4412 errors=0 current=crates/context-processing/src/stack.rs
+[2026-11-22T13:35:17Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=18.5 files_done=40 resolved=4560 errors=0 current=crates/serialization/src/expanded/node.rs
+[2026-11-22T13:35:48Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=19.0 files_done=42 resolved=4680 errors=0 current=crates/core/src/document/expanded.rs
+[2026-11-22T13:36:30Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=19.7 files_done=44 resolved=4810 errors=0 current=crates/serialization/src/expanded/object.rs
+[2026-11-22T13:37:22Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=20.6 files_done=47 resolved=5015 errors=0 current=crates/syntax/src/context/term_definition/mod.rs
+[2026-11-22T13:38:02Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=21.3 files_done=48 resolved=5180 errors=0 current=crates/syntax/src/lang.rs
+[2026-11-22T13:38:53Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=22.1 files_done=51 resolved=5363 errors=0 current=crates/syntax/src/keyword.rs
+[2026-11-22T13:39:57Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=23.2 files_done=55 resolved=5671 errors=0 current=crates/syntax/src/context/term_definition/id.rs
+[2026-11-22T13:40:30Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=23.7 files_done=59 resolved=5875 errors=0 current=crates/syntax/src/context/definition/type_.rs
+[2026-11-22T13:41:04Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=24.3 files_done=62 resolved=6024 errors=0 current=crates/core/src/object/mapped_eq.rs
+[2026-11-22T13:41:34Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=24.8 files_done=64 resolved=6151 errors=0 current=crates/core/src/deserialization/object/value.rs
+[2026-11-22T13:42:05Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=25.3 files_done=67 resolved=6347 errors=0 current=tests/expand.rs
+[2026-11-22T13:42:43Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=26.0 files_done=71 resolved=6497 errors=0 current=src/processor/remote_document.rs
+[2026-11-22T13:43:14Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=26.5 files_done=76 resolved=6620 errors=0 current=crates/core/src/ty.rs
+[2026-11-22T13:43:44Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=27.0 files_done=83 resolved=6834 errors=0 current=crates/expansion/src/array.rs
+[2026-11-22T13:44:15Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=27.5 files_done=92 resolved=7057 errors=0 current=crates/core/src/utils/comparison.rs
+[2026-11-22T13:44:46Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=28.0 files_done=105 resolved=7224 errors=0 current=crates/core/src/object/list.rs
+[2026-11-22T13:45:16Z] [iter=1] Target type resolved target_type=call_site resolved=7359 errors=0 secs=1675 mem_mb=894 MB
+[2026-11-22T13:45:16Z] [iter=1] Resolving target type target_type=import_statement count=354
+[2026-11-22T13:45:19Z] [iter=1] HEARTBEAT target_type=import_statement elapsed_min=28.6 files_done=0 resolved=0 errors=0 current=crates/core/src/rdf/mod.rs
+[2026-11-22T13:45:49Z] [iter=1] HEARTBEAT target_type=import_statement elapsed_min=29.1 files_done=83 resolved=301 errors=0 current=crates/expansion/src/warning.rs
+[2026-11-22T13:45:51Z] [iter=1] Target type resolved target_type=import_statement resolved=350 errors=0 secs=35 mem_mb=894 MB
+[2026-11-22T13:45:51Z] [iter=1] Resolving target type target_type=implements_clause count=1212
+[2026-11-22T13:46:19Z] [iter=1] HEARTBEAT target_type=implements_clause elapsed_min=29.6 files_done=11 resolved=273 errors=0 current=crates/syntax/src/direction.rs
+[2026-11-22T13:46:26Z] [iter=1] Target type resolved target_type=implements_clause resolved=1190 errors=0 secs=35 mem_mb=894 MB
+[2026-11-22T14:08:56Z] [iter=1] Step 5: Writing final enrichment file triples=102518
+[2026-11-22T14:08:57Z] [iter=1] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/17854d02835dcac70f6e9b40f028e1b61e6ae8fd.nq.gz size_kb=2361
+[2026-11-22T14:08:57Z] [iter=1] PHASE END: enrich elapsed_s=3132 elapsed_min=52.2 total_triples=102518
